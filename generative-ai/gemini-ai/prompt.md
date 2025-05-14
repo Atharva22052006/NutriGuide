@@ -30,12 +30,14 @@ Hostel Diet Plan Generator
 
 ## Table 
 - Provide each and every food item with all the micros and micros on it 
+- Make sure to provide the table day wise and it should also have type of dinner in it.
 
 ## Diet Plan
 - While providing the 7 day plan do not return the micros and macros they should just be on the table not on the 7 day meal plan
 - Do not provide suggestions at the end
 - Make sure that the meal plan is not in one single line have nested list
 - Provide just the total calories and nutrients for the entire day at the end of that particular day and not after all the days are completed
+- Should start with days and it should be written Day 1, Day 2, Day 3, etc, no other format
 
 ### Breakfast
 - Make sure the Breakfast is not too heavy
