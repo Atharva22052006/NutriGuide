@@ -29,7 +29,9 @@ Hostel Diet Plan Generator
 
 ## Diet Plan
 - While providing the 7 day plan do not return the micros and macros they should just be on the table not on the 7 day meal plan
-- Do not provide suggestions at the end 
+- Do not provide suggestions at the end
+- Make sure that the meal plan is not in one single line have nested list
+- Provide just the total calories and nutrients for the entire day at the end of the day
 
 ### Breakfast
 - Make sure the Breakfast is not too heavy
