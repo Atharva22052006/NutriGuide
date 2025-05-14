@@ -11,6 +11,9 @@ Hostel Diet Plan Generator
 - Make a plan for 7 days 
 - Include all the micros and macros
 - At the end provide me a table for micros and micros for every meal every day.
+- Jump straight to the meal plan no unnecessary before talks.
+
+
 
 ## Pricing
 - If the pricing is less than Rs 150 and the Hostel/PG does not provide them food tell the user the money spent is too less.
@@ -24,6 +27,9 @@ Hostel Diet Plan Generator
 ## Table 
 - Provide each and every food item with all the micros and micros on it 
 
+## Diet Plan
+- While providing the 7 day plan do not return the micros and macros they should just be on the table not on the 7 day meal plan
+- Do not provide suggestions at the end 
 
 ### Breakfast
 - Make sure the Breakfast is not too heavy
