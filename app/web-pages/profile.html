@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeFit Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 375px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .header i {
+            margin-right: 15px;
+            font-size: 24px;
+        }
+
+        .header-title {
+            flex-grow: 1;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .profile-card {
+            background-color: #34495e;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+        }
+
+        .profile-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+
+        .profile-details {
+            flex-grow: 1;
+        }
+
+        .profile-details h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .profile-details p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .edit-icon {
+            color: white;
+            font-size: 20px;
+        }
+
+        .info-section {
+            padding: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-icon {
+            margin-right: 15px;
+            color: #2c3e50;
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .info-content {
+            flex-grow: 1;
+        }
+
+        .info-content h3 {
+            font-size: 16px;
+            color: #2c3e50;
+        }
+
+        .info-content p {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .edit-button {
+            color: #2c3e50;
+            font-size: 20px;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 350px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .modal-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .modal-btn-cancel {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .modal-btn-save {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .fingerprint-details {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .fingerprint-details p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="ri-arrow-left-line"></i>
+            <div class="header-title">Profile</div>
+        </div>
+
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/60" alt="Profile" class="profile-image">
+            <div class="profile-details">
+                <h2 id="profile-name">Sophia Lucas</h2>
+                <p id="profile-email">samantha123@gmail.com</p>
+            </div>
+            <i class="ri-pencil-line edit-icon" data-type="profile"></i>
+        </div>
+
+        <div class="info-section">
+            <div class="info-item" id="fingerprint-item">
+                <i class="ri-key-line info-icon"></i>
+                <div class="info-content">
+                    <h3>Fingerprint</h3>
+                    <p>1 Registered</p>
+                </div>
+                <i class="ri-arrow-right-s-line edit-button" data-type="fingerprint"></i>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3 style="padding: 0 15px 10px; color: #2c3e50;">Your Information</h3>
+            
+            <div class="info-item" id="weight-item">
+                <i class="ri-scales-line info-icon"></i>
+                <div class="info-content">
+                    <h3>Weight</h3>
+                    <p id="weight-value">65 kg</p>
+                </div>
+                <i class="ri-pencil-line edit-button" data-type="weight"></i>
+            </div>
+
+            <div class="info-item" id="gender-item">
+                <i class="ri-men-line info-icon"></i>
+                <div class="info-content">
+                    <h3>Gender</h3>
+                    <p id="gender-value">Female</p>
+                </div>
+                <i class="ri-pencil-line edit-button" data-type="gender"></i>
+            </div>
+
+            <div class="info-item" id="age-item">
+                <i class="ri-calendar-line info-icon"></i>
+                <div class="info-content">
+                    <h3>Age</h3>
+                    <p id="age-value">23 yo</p>
+                </div>
+                <i class="ri-pencil-line edit-button" data-type="age"></i>
+            </div>
+
+            <div class="info-item" id="height-item">
+                <i class="ri-ruler-line info-icon"></i>
+                <div class="info-content">
+                    <h3>Height</h3>
+                    <p id="height-value">175 cm</p>
+                </div>
+                <i class="ri-pencil-line edit-button" data-type="height"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Edit</h3>
+                <i class="ri-close-line" id="close-modal"></i>
+            </div>
+            <input type="text" id="edit-input" class="modal-input">
+            <div class="modal-buttons">
+                <button id="cancel-btn" class="modal-btn modal-btn-cancel">Cancel</button>
+                <button id="save-btn" class="modal-btn modal-btn-save">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fingerprint Modal -->
+    <div id="fingerprintModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Fingerprint Details</h3>
+                <i class="ri-close-line" id="close-fingerprint-modal"></i>
+            </div>
+            <div class="fingerprint-details">
+                <p><strong>Registered Fingerprints:</strong> 1</p>
+                <p><strong>Primary Fingerprint:</strong> Right Thumb</p>
+                <p><strong>Registration Date:</strong> May 12, 2025</p>
+                <p><strong>Security Level:</strong> High</p>
+            </div>
+            <div class="modal-buttons">
+                <button id="close-fingerprint-btn" class="modal-btn modal-btn-cancel">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get DOM elements
+        const editButtons = document.querySelectorAll('.edit-button');
+        const editModal = document.getElementById('editModal');
+        const modalTitle = document.getElementById('modal-title');
+        const editInput = document.getElementById('edit-input');
+        const closeModal = document.getElementById('close-modal');
+        const cancelBtn = document.getElementById('cancel-btn');
+        const saveBtn = document.getElementById('save-btn');
+
+        // Fingerprint modal elements
+        const fingerprintItem = document.querySelector('.edit-button[data-type="fingerprint"]');
+        const fingerprintModal = document.getElementById('fingerprintModal');
+        const closeFingerprintModal = document.getElementById('close-fingerprint-modal');
+        const closeFingerprintBtn = document.getElementById('close-fingerprint-btn');
+
+        let currentEditType = '';
+
+        // Open modal for editing
+        editButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                currentEditType = button.getAttribute('data-type');
+                
+                // Set modal title and input based on edit type
+                switch(currentEditType) {
+                    case 'profile':
+                        modalTitle.textContent = 'Edit Profile';
+                        editInput.type = 'text';
+                        editInput.value = document.getElementById('profile-name').textContent;
+                        break;
+                    case 'weight':
+                        modalTitle.textContent = 'Edit Weight';
+                        editInput.type = 'number';
+                        editInput.value = document.getElementById('weight-value').textContent.replace(' kg', '');
+                        break;
+                    case 'gender':
+                        modalTitle.textContent = 'Edit Gender';
+                        editInput.type = 'text';
+                        editInput.value = document.getElementById('gender-value').textContent;
+                        break;
+                    case 'age':
+                        modalTitle.textContent = 'Edit Age';
+                        editInput.type = 'number';
+                        editInput.value = document.getElementById('age-value').textContent.replace(' yo', '');
+                        break;
+                    case 'height':
+                        modalTitle.textContent = 'Edit Height';
+                        editInput.type = 'number';
+                        editInput.value = document.getElementById('height-value').textContent.replace(' cm', '');
+                        break;
+                    case 'fingerprint':
+                        // Show fingerprint modal instead
+                        fingerprintModal.style.display = 'flex';
+                        return;
+                }
+                
+                editModal.style.display = 'flex';
+            });
+        });
+
+        // Close modal functions
+        function closeEditModal() {
+            editModal.style.display = 'none';
+        }
+
+        function closeFingerprintModalFunc() {
+            fingerprintModal.style.display = 'none';
+        }
+
+        closeModal.addEventListener('click', closeEditModal);
+        cancelBtn.addEventListener('click', closeEditModal);
+
+        // Close fingerprint modal
+        closeFingerprintModal.addEventListener('click', closeFingerprintModalFunc);
+        closeFingerprintBtn.addEventListener('click', closeFingerprintModalFunc);
+
+        // Save edited value
+        saveBtn.addEventListener('click', () => {
+            const newValue = editInput.value.trim();
+            
+            if (newValue === '') {
+                alert('Please enter a value');
+                return;
+            }
+
+            // Update value based on edit type
+            switch(currentEditType) {
+                case 'profile':
+                    document.getElementById('profile-name').textContent = newValue;
+                    break;
+                case 'weight':
+                    document.getElementById('weight-value').textContent = `${newValue} kg`;
+                    break;
+                case 'gender':
+                    document.getElementById('gender-value').textContent = newValue;
+                    break;
+                case 'age':
+                    document.getElementById('age-value').textContent = `${newValue} yo`;
+                    break;
+                case 'height':
+                    document.getElementById('height-value').textContent = `${newValue} cm`;
+                    break;
+            }
+
+            closeEditModal();
+        });
+
+        // Prevent modal from closing when clicking inside it
+        document.querySelectorAll('.modal-content').forEach(content => {
+            content.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        });
+
+        // Close modal when clicking outside
+        editModal.addEventListener('click', closeEditModal);
+        fingerprintModal.addEventListener('click', closeFingerprintModalFunc);
+    </script>
+</body>
+</html>
