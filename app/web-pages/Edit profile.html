@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-container {
+            background-color: white;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 375px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+            z-index: 10;
+        }
+
+        .profile-header {
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .profile-header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .profile-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-form {
+            padding: 0 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+
+        .form-group .icon {
+            position: absolute;
+            right: 10px;
+            top: 35px;
+            color: #888;
+        }
+
+        .connect-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .connect-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .connect-btn:hover {
+            background-color: #f5f5f5;
+        }
+
+        .connect-btn img {
+            width: 24px;
+            margin-right: 10px;
+        }
+
+        .save-profile-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #1a2b3c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-top: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background-color 0.3s;
+        }
+
+        .save-profile-btn:hover {
+            background-color: #2a3b4c;
+        }
+
+        .save-profile-btn i {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <button class="back-button">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="profile-header">
+            <h1>Edit Profile</h1>
+            <img src="/api/placeholder/120/120" class="profile-image">
+        </div>
+
+        <form class="profile-form">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" value="Name" >
+                <i class="fas fa-user icon"></i>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+                <i class="fas fa-envelope icon"></i>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="Enter new password">
+                <i class="fas fa-lock icon"></i>
+            </div>
+
+            <div class="connect-buttons">
+                <button type="button" class="connect-btn">
+                    <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/7.3.0/apple.svg" alt="Apple">
+                    Connect
+                </button>
+                <button type="button" class="connect-btn">
+                    <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/7.3.0/google.svg" alt="Google">
+                    Connect
+                </button>
+            </div>
+
+            <button type="submit" class="save-profile-btn">
+                Save profile
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </form>
+    </div>
+
+    <script>
+        // Back button functionality
+        document.querySelector('.back-button').addEventListener('click', () => {
+            // Implement back navigation logic
+            alert('Back to previous page');
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Collect form data
+            const formData = {
+                name: document.querySelector('input[value="Sophia Lucas"]').value,
+                email: document.querySelector('input[type="email"]').value,
+                password: document.querySelector('input[type="password"]').value
+            };
+
+            // Validate form data
+            if (!formData.email) {
+                alert('Please enter an email address');
+                return;
+            }
+
+            // Simulate profile save
+            console.log('Profile data:', formData);
+            alert('Profile saved successfully!');
+        });
+
+        // Connect buttons functionality
+        document.querySelectorAll('.connect-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const platform = btn.textContent.trim();
+                alert(`Connecting with ${platform}`);
+            });
+        });
+    </script>
+</body>
+</html>
