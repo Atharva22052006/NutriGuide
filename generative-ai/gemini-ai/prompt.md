@@ -49,6 +49,29 @@ Hostel Diet Plan Generator
 ## Food Pricing
 - The typical 3 wheat roti and sabji comes for rs. 70 
 
+<Student Information>
+1. Your age:  18
+2. Gender (M/F/O):  M
+3. Current weight (kg):  48
+4. Height (cm):  166
+5. Goal (weight_loss/muscle_gain/maintain):  muscle_gain
+6. Allergies (comma separated):  none
+7. City (for local food options):  pune
+8. Hostel/PG/Home/Office?  PG
+9. Cooking? (none/kettle/microwave/full_kitchen):  none
+10. Available utensils (comma separated):  none
+11. Fridge access? (none/shared/private):  none
+12. Daily food budget (₹):  250
+13. Where you eat (mess/dhaba/swiggy/home):  mess
+14. Mess restrictions (veg_only/no_eggs/etc):  none
+15. Preferred cuisines (north/south/street/etc):  none
+16. Favorite foods:  none
+17. Foods you hate:  none
+18. Spice tolerance (low/medium/high):  high
+19. Does Your Hostel/PG provide food: NO
+20. How many times food does your hostel/PG provide food(Breakfast/Lunch/Dinner): (0/0/0)
+</Student Information>
+
 
 
 
@@ -79,10 +102,10 @@ Hostel Diet Plan Generator
 
 
 
-<Output>
+<Sample Output>
 Intro
 
-Day i
+Day 1
 -Breakfast
  -item 1
  -item 2
@@ -102,7 +125,125 @@ Daily Totals
 - Carbohydrates
 - Fats
 
-Day i+1
+Day 2
+-Breakfast
+ -item 1
+ -item 2
+ -item 3
+-Lunch
+ -item 1
+ -item 2
+ -item 3
+Dinner
+ -item 1
+ -item 2
+ -item 3
+
+Daily Totals 
+- Calories
+- Protein
+- Carbohydrates
+- Fats
+
+Day 3
+-Breakfast
+ -item 1
+ -item 2
+ -item 3
+-Lunch
+ -item 1
+ -item 2
+ -item 3
+Dinner
+ -item 1
+ -item 2
+ -item 3
+
+Daily Totals 
+- Calories
+- Protein
+- Carbohydrates
+- Fats
+
+Day 4
+-Breakfast
+ -item 1
+ -item 2
+ -item 3
+-Lunch
+ -item 1
+ -item 2
+ -item 3
+Dinner
+ -item 1
+ -item 2
+ -item 3
+
+Daily Totals 
+- Calories
+- Protein
+- Carbohydrates
+- Fats
+
+Day 5
+-Breakfast
+ -item 1
+ -item 2
+ -item 3
+-Lunch
+ -item 1
+ -item 2
+ -item 3
+Dinner
+ -item 1
+ -item 2
+ -item 3
+
+Daily Totals 
+- Calories
+- Protein
+- Carbohydrates
+- Fats
+
+Day 6
+-Breakfast
+ -item 1
+ -item 2
+ -item 3
+-Lunch
+ -item 1
+ -item 2
+ -item 3
+Dinner
+ -item 1
+ -item 2
+ -item 3
+
+Daily Totals 
+- Calories
+- Protein
+- Carbohydrates
+- Fats
+
+Day 7
+-Breakfast
+ -item 1
+ -item 2
+ -item 3
+-Lunch
+ -item 1
+ -item 2
+ -item 3
+Dinner
+ -item 1
+ -item 2
+ -item 3
+
+Daily Totals 
+- Calories
+- Protein
+- Carbohydrates
+- Fats
 
 (at the end)
 
@@ -110,7 +251,7 @@ NOte:
 
 Daily Macro and Micro-nutrient Table
 
-Day i
+Day 1
 
 Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
 Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
@@ -122,7 +263,96 @@ Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
 	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
 	Small Salad	20	1	4	0.1	0.5	10	5	10
 Total		1481	88.7	170.8	52.1	10.3	595	33	240
-</Output>
+
+
+Day 2
+
+Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
+Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
+	1 Banana	105	1.3	27	0.3	0.3	5	10	10
+	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
+Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
+	1 small bowl Curd	80	4	6	4	0.1	150	1	15
+Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
+	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
+	Small Salad	20	1	4	0.1	0.5	10	5	10
+Total		1481	88.7	170.8	52.1	10.3	595	33	240
+
+
+Day 3
+
+Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
+Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
+	1 Banana	105	1.3	27	0.3	0.3	5	10	10
+	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
+Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
+	1 small bowl Curd	80	4	6	4	0.1	150	1	15
+Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
+	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
+	Small Salad	20	1	4	0.1	0.5	10	5	10
+Total		1481	88.7	170.8	52.1	10.3	595	33	240
+
+
+Day 4
+
+Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
+Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
+	1 Banana	105	1.3	27	0.3	0.3	5	10	10
+	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
+Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
+	1 small bowl Curd	80	4	6	4	0.1	150	1	15
+Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
+	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
+	Small Salad	20	1	4	0.1	0.5	10	5	10
+Total		1481	88.7	170.8	52.1	10.3	595	33	240
+
+
+Day 5
+
+Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
+Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
+	1 Banana	105	1.3	27	0.3	0.3	5	10	10
+	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
+Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
+	1 small bowl Curd	80	4	6	4	0.1	150	1	15
+Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
+	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
+	Small Salad	20	1	4	0.1	0.5	10	5	10
+Total		1481	88.7	170.8	52.1	10.3	595	33	240
+
+
+Day 6
+
+Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
+Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
+	1 Banana	105	1.3	27	0.3	0.3	5	10	10
+	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
+Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
+	1 small bowl Curd	80	4	6	4	0.1	150	1	15
+Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
+	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
+	Small Salad	20	1	4	0.1	0.5	10	5	10
+Total		1481	88.7	170.8	52.1	10.3	595	33	240
+
+
+Day 7
+
+Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
+Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
+	1 Banana	105	1.3	27	0.3	0.3	5	10	10
+	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
+Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
+	1 small bowl Curd	80	4	6	4	0.1	150	1	15
+Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
+	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
+	Small Salad	20	1	4	0.1	0.5	10	5	10
+Total		1481	88.7	170.8	52.1	10.3	595	33	240
+
+
+
+
+
+</Sample Output>
 
 </Example>
 
