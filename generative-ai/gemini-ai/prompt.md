@@ -10,7 +10,7 @@ Hostel Diet Plan Generator
 - Make sure to return all the micros and macros of the foods returned
 - Make a plan for 7 days 
 - Include all the micros and macros
-- At the end provide me a table for micros and micros for every meal every day.
+- At the end provide me a listed value for all the micros and micros for every meal every day. This list should not be in table format
 - Jump straight to the meal plan no unnecessary before talks.
 - Make sure to add note that all the micros and macros are approx and can vary based on the specific ingredients and preparation methods and also that the price is approx and can vary depending on the region
 
@@ -28,9 +28,11 @@ Hostel Diet Plan Generator
 - If the meal is provided by hostel/pg for all the times just provide the extra things the user has to eat to hit the nutrition goal.
 - Even if the mess provides food consider approx food eaten and do not exclude it in the final count.
 
-## Table 
+## list 
 - Provide each and every food item with all the micros and micros on it 
-- Make sure to provide the table day wise and it should also have type of dinner in it.
+- Make sure to provide the list day wise and it should also have type of dinner in it.
+- This list should not be in the table format
+- The format will be again Day 1 then inside that a list of breakfast lunch and dinner and for every food item there make another nested list that gives the macros micros and all the nutritional information with price 
 
 ## Diet Plan
 - While providing the 7 day plan do not return the micros and macros they should just be on the table not on the 7 day meal plan
@@ -107,253 +109,1225 @@ Intro
 
 Day 1
 -Breakfast
- -item 1
- -item 2
- -item 3
+ -item 1 (Price)
+ -item 2 (Price)
+ -item 3 (Price)
 -Lunch
- -item 1
- -item 2
- -item 3
+ -item 1 (Price)
+ -item 2 (Price)
+ -item 3 (Price)
 Dinner
- -item 1
- -item 2
- -item 3
+ -item 1 (Price)
+ -item 2 (Price)
+ -item 3 (Price)
 
 Daily Totals 
 - Calories
 - Protein
 - Carbohydrates
 - Fats
+- Price
 
 Day 2
 -Breakfast
- -item 1
- -item 2
- -item 3
+ -item 1 (Price)
+ -item 2 (Price)
+ -item 3 (Price)
 -Lunch
- -item 1
- -item 2
- -item 3
+ -item 1 (Price)
+ -item 2 (Price)
+ -item 3 (Price)
 Dinner
- -item 1
- -item 2
- -item 3
+ -item 1 (Price)
+ -item 2 (Price)
+ -item 3 (Price)
 
 Daily Totals 
 - Calories
 - Protein
 - Carbohydrates
 - Fats
+- Price
 
 Day 3
 -Breakfast
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 -Lunch
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 Dinner
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 
 Daily Totals 
 - Calories
 - Protein
 - Carbohydrates
 - Fats
+- Price
 
 Day 4
 -Breakfast
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 -Lunch
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 Dinner
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 
 Daily Totals 
 - Calories
 - Protein
 - Carbohydrates
 - Fats
+- Price
 
 Day 5
 -Breakfast
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 -Lunch
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 Dinner
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 
 Daily Totals 
 - Calories
 - Protein
 - Carbohydrates
 - Fats
+- Price
 
 Day 6
 -Breakfast
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 -Lunch
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 Dinner
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 
 Daily Totals 
 - Calories
 - Protein
 - Carbohydrates
 - Fats
+- Price
 
 Day 7
 -Breakfast
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 -Lunch
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 Dinner
- -item 1
- -item 2
- -item 3
+ -item 1(Price)
+ -item 2(Price)
+ -item 3(Price)
 
 Daily Totals 
 - Calories
 - Protein
 - Carbohydrates
 - Fats
+- Price
 
 (at the end)
 
 NOte:
 
-Daily Macro and Micro-nutrient Table
+Daily Macro and Micro-nutrient lists
+
+
 
 Day 1
-
-Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
-Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
-	1 Banana	105	1.3	27	0.3	0.3	5	10	10
-	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
-Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
-	1 small bowl Curd	80	4	6	4	0.1	150	1	15
-Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
-	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
-	Small Salad	20	1	4	0.1	0.5	10	5	10
-Total		1481	88.7	170.8	52.1	10.3	595	33	240
+-Breakfast
+ -item 1 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+-Lunch
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+Dinner
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
 
 
 Day 2
-
-Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
-Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
-	1 Banana	105	1.3	27	0.3	0.3	5	10	10
-	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
-Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
-	1 small bowl Curd	80	4	6	4	0.1	150	1	15
-Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
-	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
-	Small Salad	20	1	4	0.1	0.5	10	5	10
-Total		1481	88.7	170.8	52.1	10.3	595	33	240
-
+-Breakfast
+ -item 1 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+-Lunch
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+Dinner
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
 
 Day 3
-
-Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
-Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
-	1 Banana	105	1.3	27	0.3	0.3	5	10	10
-	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
-Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
-	1 small bowl Curd	80	4	6	4	0.1	150	1	15
-Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
-	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
-	Small Salad	20	1	4	0.1	0.5	10	5	10
-Total		1481	88.7	170.8	52.1	10.3	595	33	240
-
+-Breakfast
+ -item 1 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+-Lunch
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+Dinner
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
 
 Day 4
-
-Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
-Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
-	1 Banana	105	1.3	27	0.3	0.3	5	10	10
-	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
-Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
-	1 small bowl Curd	80	4	6	4	0.1	150	1	15
-Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
-	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
-	Small Salad	20	1	4	0.1	0.5	10	5	10
-Total		1481	88.7	170.8	52.1	10.3	595	33	240
-
+-Breakfast
+ -item 1 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+-Lunch
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+Dinner
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
 
 Day 5
-
-Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
-Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
-	1 Banana	105	1.3	27	0.3	0.3	5	10	10
-	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
-Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
-	1 small bowl Curd	80	4	6	4	0.1	150	1	15
-Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
-	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
-	Small Salad	20	1	4	0.1	0.5	10	5	10
-Total		1481	88.7	170.8	52.1	10.3	595	33	240
-
+-Breakfast
+ -item 1 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+-Lunch
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+Dinner
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
 
 Day 6
-
-Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
-Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
-	1 Banana	105	1.3	27	0.3	0.3	5	10	10
-	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
-Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
-	1 small bowl Curd	80	4	6	4	0.1	150	1	15
-Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
-	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
-	Small Salad	20	1	4	0.1	0.5	10	5	10
-Total		1481	88.7	170.8	52.1	10.3	595	33	240
-
+-Breakfast
+ -item 1 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+-Lunch
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+Dinner
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
 
 Day 7
+-Breakfast
+ -item 1 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+   - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+-Lunch
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+Dinner
+ -item 1 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 2 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
+ -item 3 (Price)
+    - Calories (kcal)
+   - Protein (g)
+   - Carbs (g)
+   - Fats (g)
+   - Iron (mg)
+   - Calcium (mg)
+   - Vitamin C (mg)
+   - Cost (₹)
 
-Meal	Food Item	Calories (kcal)	Protein (g)	Carbs (g)	Fats (g)	Iron (mg)	Calcium (mg)	Vitamin C (mg)	Cost (₹)
-Breakfast	2 Boiled Eggs	156	12.6	1.2	10.6	1.8	50	0	20
-	1 Banana	105	1.3	27	0.3	0.3	5	10	10
-	1 glass Milk (200ml)	120	6.8	9.6	6.8	0.1	240	2	15
-Lunch	3 Wheat Rotis with Sabzi (Dal & Mixed Veg)	450	15	75	10	4	100	15	70
-	1 small bowl Curd	80	4	6	4	0.1	150	1	15
-Dinner	Chicken Curry (150g chicken)	400	45	15	20	3	30	5	80
-	1 Bowl Rice	150	3	33	0.3	0.5	10	0	20
-	Small Salad	20	1	4	0.1	0.5	10	5	10
-Total		1481	88.7	170.8	52.1	10.3	595	33	240
 
+<Output Example>
 
+In Pune, for an 18-year-old male weighing 48 kg and 166 cm tall, aiming for muscle gain with a daily budget of ₹250 and eating all meals from a mess, here's a 7-day meal plan.
 
+---
 
+Day 1
+- Breakfast
+    - Poha (₹30)
+    - 2 Boiled Eggs (₹20)
+- Lunch
+    - 3 Roti, Dal, Sabzi (₹70)
+    - Small bowl of Curd (₹10)
+- Dinner
+    - Chicken Curry (150g chicken) with 2 Roti (₹100)
 
-</Sample Output>
+Daily Totals
+- Calories: 2200-2400 kcal
+- Protein: 90-100g
+- Carbohydrates: 280-300g
+- Fats: 70-80g
+- Price: ₹200
 
-</Example>
+---
 
+Day 2
+- Breakfast
+    - 2 Dosa with Sambar and Chutney (₹40)
+    - 1 Banana (₹5)
+- Lunch
+    - 3 Roti, Mixed Vegetable Sabzi, Dal Fry (₹70)
+    - Green Salad (₹10)
+- Dinner
+    - Egg Bhurji (2 eggs) with 2 Pav (₹60)
+    - Small bowl of Sprouted Moong Dal (₹20)
 
+Daily Totals
+- Calories: 2100-2300 kcal
+- Protein: 85-95g
+- Carbohydrates: 270-290g
+- Fats: 65-75g
+- Price: ₹205
+
+---
+
+Day 3
+- Breakfast
+    - Upma with peanuts and vegetables (₹30)
+    - Glass of Milk (200ml) (₹20)
+- Lunch
+    - Rice Plate (Rice, Dal, Veg Curry, Salad) (₹80)
+    - Papad (₹5)
+- Dinner
+    - Paneer Bhurji (100g paneer) with 2 Roti (₹90)
+
+Daily Totals
+- Calories: 2300-2500 kcal
+- Protein: 95-105g
+- Carbohydrates: 290-310g
+- Fats: 75-85g
+- Price: ₹225
+
+---
+
+Day 4
+- Breakfast
+    - 2 Aloo Paratha with Curd (₹50)
+- Lunch
+    - 3 Roti, Chole, Rice (₹70)
+    - Onion Salad (₹5)
+- Dinner
+    - Fish Curry (1 piece fish) with Rice (₹100)
+
+Daily Totals
+- Calories: 2250-2450 kcal
+- Protein: 90-100g
+- Carbohydrates: 280-300g
+- Fats: 70-80g
+- Price: ₹225
+
+---
+
+Day 5
+- Breakfast
+    - Idli Vada Sambar (2 Idli, 1 Vada) (₹40)
+- Lunch
+    - 3 Roti, Anda Curry (2 eggs), Salad (₹80)
+- Dinner
+    - Veg Pulao with Raita (₹70)
+    - 1 Orange (₹10)
+
+Daily Totals
+- Calories: 2150-2350 kcal
+- Protein: 80-90g
+- Carbohydrates: 270-290g
+- Fats: 65-75g
+- Price: ₹200
+
+---
+
+Day 6
+- Breakfast
+    - Misal Pav (₹40)
+- Lunch
+    - 3 Roti, Soyabean Sabzi, Dal (₹70)
+    - Buttermilk (₹10)
+- Dinner
+    - Chicken Thali (Chicken Gravy, 2 Roti, Rice) (₹110)
+
+Daily Totals
+- Calories: 2350-2550 kcal
+- Protein: 100-110g
+- Carbohydrates: 290-310g
+- Fats: 80-90g
+- Price: ₹230
+
+---
+
+Day 7
+- Breakfast
+    - Bread Omelette (2 eggs, 2 slices bread) (₹40)
+    - Apple (₹15)
+- Lunch
+    - Thalipeeth with Curd (₹60)
+- Dinner
+    - Veg Kolhapuri with 3 Roti (₹80)
+
+Daily Totals
+- Calories: 2100-2300 kcal
+- Protein: 80-90g
+- Carbohydrates: 260-280g
+- Fats: 65-75g
+- Price: ₹195
+
+---
+Note: All the micros and macros are approximate and can vary based on the specific ingredients and preparation methods. Prices are approximate and can vary depending on the region and vendor in Pune. Your daily budget is ₹250, and the meal plan provides sufficient nutrition for muscle gain within this budget.
+
+---
+
+### Daily Macro and Micro-nutrient lists
+
+Day 1
+- Breakfast
+    - Poha (₹30)
+        - Calories: 200-250 kcal
+        - Protein: 5-7g
+        - Carbs: 40-50g
+        - Fats: 5-8g
+        - Iron: 2-3mg
+        - Calcium: 30-40mg
+        - Vitamin C: 5-10mg
+        - Cost: ₹30
+    - 2 Boiled Eggs (₹20)
+        - Calories: 150-160 kcal
+        - Protein: 12-14g
+        - Carbs: 1-2g
+        - Fats: 10-11g
+        - Iron: 1.5-2mg
+        - Calcium: 50-60mg
+        - Vitamin C: 0mg
+        - Cost: ₹20
+- Lunch
+    - 3 Roti, Dal, Sabzi (₹70)
+        - Calories: 600-700 kcal
+        - Protein: 20-25g
+        - Carbs: 80-90g
+        - Fats: 20-25g
+        - Iron: 5-7mg
+        - Calcium: 100-120mg
+        - Vitamin C: 10-15mg
+        - Cost: ₹70
+    - Small bowl of Curd (₹10)
+        - Calories: 60-70 kcal
+        - Protein: 3-4g
+        - Carbs: 4-5g
+        - Fats: 3-4g
+        - Iron: 0.1-0.2mg
+        - Calcium: 120-150mg
+        - Vitamin C: 0-1mg
+        - Cost: ₹10
+- Dinner
+    - Chicken Curry (150g chicken) with 2 Roti (₹100)
+        - Calories: 1000-1200 kcal
+        - Protein: 50-60g
+        - Carbs: 80-90g
+        - Fats: 50-60g
+        - Iron: 4-5mg
+        - Calcium: 80-100mg
+        - Vitamin C: 5-10mg
+        - Cost: ₹100
+
+Day 2
+- Breakfast
+    - 2 Dosa with Sambar and Chutney (₹40)
+        - Calories: 250-300 kcal
+        - Protein: 8-10g
+        - Carbs: 45-55g
+        - Fats: 5-8g
+        - Iron: 2-3mg
+        - Calcium: 40-50mg
+        - Vitamin C: 5-10mg
+        - Cost: ₹40
+    - 1 Banana (₹5)
+        - Calories: 100-110 kcal
+        - Protein: 1g
+        - Carbs: 25-30g
+        - Fats: 0.3g
+        - Iron: 0.3mg
+        - Calcium: 5mg
+        - Vitamin C: 10mg
+        - Cost: ₹5
+- Lunch
+    - 3 Roti, Mixed Vegetable Sabzi, Dal Fry (₹70)
+        - Calories: 600-700 kcal
+        - Protein: 20-25g
+        - Carbs: 80-90g
+        - Fats: 20-25g
+        - Iron: 5-7mg
+        - Calcium: 100-120mg
+        - Vitamin C: 15-20mg
+        - Cost: ₹70
+    - Green Salad (₹10)
+        - Calories: 30-50 kcal
+        - Protein: 1-2g
+        - Carbs: 5-8g
+        - Fats: 0-1g
+        - Iron: 0.5-1mg
+        - Calcium: 20-30mg
+        - Vitamin C: 10-15mg
+        - Cost: ₹10
+- Dinner
+    - Egg Bhurji (2 eggs) with 2 Pav (₹60)
+        - Calories: 500-600 kcal
+        - Protein: 20-25g
+        - Carbs: 40-50g
+        - Fats: 30-35g
+        - Iron: 3-4mg
+        - Calcium: 80-100mg
+        - Vitamin C: 5-10mg
+        - Cost: ₹60
+    - Small bowl of Sprouted Moong Dal (₹20)
+        - Calories: 100-120 kcal
+        - Protein: 8-10g
+        - Carbs: 20-25g
+        - Fats: 1-2g
+        - Iron: 2-3mg
+        - Calcium: 30-40mg
+        - Vitamin C: 5-10mg
+        - Cost: ₹20
+
+Day 3
+- Breakfast
+    - Upma with peanuts and vegetables (₹30)
+        - Calories: 220-270 kcal
+        - Protein: 6-8g
+        - Carbs: 35-45g
+        - Fats: 8-10g
+        - Iron: 1-2mg
+        - Calcium: 20-30mg
+        - Vitamin C: 5-10mg
+        - Cost: ₹30
+    - Glass of Milk (200ml) (₹20)
+        - Calories: 120-130 kcal
+        - Protein: 6-7g
+        - Carbs: 10-12g
+        - Fats: 5-7g
+        - Iron: 0.1mg
+        - Calcium: 240-250mg
+        - Vitamin C: 2-3mg
+        - Cost: ₹20
+- Lunch
+    - Rice Plate (Rice, Dal, Veg Curry, Salad) (₹80)
+        - Calories: 700-800 kcal
+        - Protein: 25-30g
+        - Carbs: 100-110g
+        - Fats: 20-25g
+        - Iron: 6-8mg
+        - Calcium: 120-150mg
+        - Vitamin C: 20-25mg
+        - Cost: ₹80
+    - Papad (₹5)
+        - Calories: 50-60 kcal
+        - Protein: 2-3g
+        - Carbs: 10-12g
+        - Fats: 0.5-1g
+        - Iron: 0.5mg
+        - Calcium: 10-15mg
+        - Vitamin C: 0mg
+        - Cost: ₹5
+- Dinner
+    - Paneer Bhurji (100g paneer) with 2 Roti (₹90)
+        - Calories: 1200-1400 kcal
+        - Protein: 60-70g
+        - Carbs: 80-90g
+        - Fats: 70-80g
+        - Iron: 4-5mg
+        - Calcium: 300-350mg
+        - Vitamin C: 10-15mg
+        - Cost: ₹90
+
+Day 4
+- Breakfast
+    - 2 Aloo Paratha with Curd (₹50)
+        - Calories: 400-500 kcal
+        - Protein: 10-12g
+        - Carbs: 50-60g
+        - Fats: 15-20g
+        - Iron: 2-3mg
+        - Calcium: 80-100mg
+        - Vitamin C: 5-10mg
+        - Cost: ₹50
+- Lunch
+    - 3 Roti, Chole, Rice (₹70)
+        - Calories: 700-800 kcal
+        - Protein: 25-30g
+        - Carbs: 100-110g
+        - Fats: 20-25g
+        - Iron: 6-8mg
+        - Calcium: 100-120mg
+        - Vitamin C: 10-15mg
+        - Cost: ₹70
+    - Onion Salad (₹5)
+        - Calories: 20-30 kcal
+        - Protein: 0.5-1g
+        - Carbs: 4-6g
+        - Fats: 0g
+        - Iron: 0.2mg
+        - Calcium: 10-15mg
+        - Vitamin C: 5-8mg
+        - Cost: ₹5
+- Dinner
+    - Fish Curry (1 piece fish) with Rice (₹100)
+        - Calories: 1100-1300 kcal
+        - Protein: 55-65g
+        - Carbs: 80-90g
+        - Fats: 60-70g
+        - Iron: 3-4mg
+        - Calcium: 70-90mg
+        - Vitamin C: 5-10mg
+        - Cost: ₹100
+
+Day 5
+- Breakfast
+    - Idli Vada Sambar (2 Idli, 1 Vada) (₹40)
+        - Calories: 300-350 kcal
+        - Protein: 10-12g
+        - Carbs: 50-60g
+        - Fats: 8-10g
+        - Iron: 2-3mg
+        - Calcium: 50-60mg
+        - Vitamin C: 5-10mg
+        - Cost: ₹40
+- Lunch
+    - 3 Roti, Anda Curry (2 eggs), Salad (₹80)
+        - Calories: 800-900 kcal
+        - Protein: 30-35g
+        - Carbs: 80-90g
+        - Fats: 35-40g
+        - Iron: 5-6mg
+        - Calcium: 150-180mg
+        - Vitamin C: 10-15mg
+        - Cost: ₹80
+- Dinner
+    - Veg Pulao with Raita (₹70)
+        - Calories: 700-800 kcal
+        - Protein: 15-20g
+        - Carbs: 100-110g
+        - Fats: 25-30g
+        - Iron: 4-5mg
+        - Calcium: 80-100mg
+        - Vitamin C: 10-15mg
+        - Cost: ₹70
+    - 1 Orange (₹10)
+        - Calories: 60-70 kcal
+        - Protein: 1g
+        - Carbs: 15-18g
+        - Fats: 0.2g
+        - Iron: 0.1mg
+        - Calcium: 40-50mg
+        - Vitamin C: 50-60mg
+        - Cost: ₹10
+
+Day 6
+- Breakfast
+    - Misal Pav (₹40)
+        - Calories: 350-400 kcal
+        - Protein: 10-12g
+        - Carbs: 45-55g
+        - Fats: 15-20g
+        - Iron: 3-4mg
+        - Calcium: 60-70mg
+        - Vitamin C: 5-10mg
+        - Cost: ₹40
+- Lunch
+    - 3 Roti, Soyabean Sabzi, Dal (₹70)
+        - Calories: 700-800 kcal
+        - Protein: 30-35g
+        - Carbs: 90-100g
+        - Fats: 20-25g
+        - Iron: 7-9mg
+        - Calcium: 150-180mg
+        - Vitamin C: 10-15mg
+        - Cost: ₹70
+    - Buttermilk (₹10)
+        - Calories: 40-50 kcal
+        - Protein: 2-3g
+        - Carbs: 3-4g
+        - Fats: 1-2g
+        - Iron: 0.1mg
+        - Calcium: 100-120mg
+        - Vitamin C: 0-1mg
+        - Cost: ₹10
+- Dinner
+    - Chicken Thali (Chicken Gravy, 2 Roti, Rice) (₹110)
+        - Calories: 1300-1500 kcal
+        - Protein: 60-70g
+        - Carbs: 100-120g
+        - Fats: 70-80g
+        - Iron: 5-6mg
+        - Calcium: 100-120mg
+        - Vitamin C: 10-15mg
+        - Cost: ₹110
+
+Day 7
+- Breakfast
+    - Bread Omelette (2 eggs, 2 slices bread) (₹40)
+        - Calories: 300-350 kcal
+        - Protein: 15-18g
+        - Carbs: 30-35g
+        - Fats: 15-18g
+        - Iron: 2-3mg
+        - Calcium: 60-70mg
+        - Vitamin C: 0-2mg
+        - Cost: ₹40
+    - Apple (₹15)
+        - Calories: 90-100 kcal
+        - Protein: 0.5g
+        - Carbs: 22-25g
+        - Fats: 0.3g
+        - Iron: 0.1mg
+        - Calcium: 10mg
+        - Vitamin C: 8-10mg
+        - Cost: ₹15
+- Lunch
+    - Thalipeeth with Curd (₹60)
+        - Calories: 500-600 kcal
+        - Protein: 20-25g
+        - Carbs: 60-70g
+        - Fats: 20-25g
+        - Iron: 4-5mg
+        - Calcium: 150-180mg
+        - Vitamin C: 5-10mg
+        - Cost: ₹60
+- Dinner
+    - Veg Kolhapuri with 3 Roti (₹80)
+        - Calories: 700-800 kcal
+        - Protein: 20-25g
+        - Carbs: 90-100g
+        - Fats: 30-35g
+        - Iron: 5-6mg
+        - Calcium: 120-150mg
+        - Vitamin C: 15-20mg
+        - Cost: ₹80
+
+</Output Example>
